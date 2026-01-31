@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
         /* ========================================
            CSS Variables & Reset
@@ -938,10 +937,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            margin: 0 auto 24px;
             position: relative;
             z-index: 1;
             background: rgba(255, 255, 255, 0.05);
+        }
+
+        .profile-icon svg {
+            display: block;
         }
 
         .profile-card.architect .profile-icon { color: var(--primary); background: rgba(249, 115, 22, 0.15); }
@@ -2501,17 +2504,6 @@
                         <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                     </div>
                     <p>Pull latest updates from repository</p>
-                </div>
-                <div class="alias-card">
-                    <div class="alias-header">
-                        <code>claude-sync</code>
-                        <span class="alias-tag">Backup</span>
-                    </div>
-                    <div class="alias-code">
-                        <code>alias claude-sync="cd ~/.claude && git add -A && git commit -m 'sync' && git push && cd -"</code>
-                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                    </div>
-                    <p>Sync your customizations to remote</p>
                 </div>
                 <div class="alias-card">
                     <div class="alias-header">
