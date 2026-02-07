@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MegaTeam v4.2 | Multi-Agent DevOps Platform for Claude Code</title>
+    <title>MegaTeam v4.5 | Multi-Agent DevOps Platform for Claude Code</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -1727,7 +1727,7 @@
                     </svg>
                 </div>
                 MegaTeam
-                <span>v4.2</span>
+                <span>v4.5</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#installation">Install</a></li>
@@ -1770,15 +1770,15 @@
                         <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
                         <circle cx="12" cy="12" r="4"/>
                     </svg>
-                    Version 4.2 — Dynamic Stack Detection
+                    Version 4.5 — Agent Teams (Parallel Execution)
                 </div>
                 <h1>
                     <span class="text-gradient">MegaTeam</span><br>
                     Multi-Agent DevOps
                 </h1>
                 <p class="hero-subtitle">
-                    The most advanced configuration system for Claude Code with 63+ skills,
-                    15 specialized agents, 4 role-based profiles, and 80+ automation scripts.
+                    The most advanced configuration system for Claude Code with Agent Teams (parallel agents),
+                    63+ skills, 16 specialized agents, 12 hook events, 4 role-based profiles, and 80+ automation scripts.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -1790,8 +1790,8 @@
                         <div class="stat-label">Agents</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number text-gradient" data-count="4">0</div>
-                        <div class="stat-label">Profiles</div>
+                        <div class="stat-number text-gradient" data-count="12">0</div>
+                        <div class="stat-label">Hooks</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number text-gradient" data-count="79">0</div>
@@ -1935,6 +1935,67 @@
                 <p>Optimize your development workflow with AI-powered automation</p>
             </div>
             <div class="features-grid">
+                <div class="feature-card reveal" style="border: 2px solid rgba(139, 92, 246, 0.5); background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10"/>
+                            <path d="M12 12V2"/>
+                            <path d="M12 12l7-7"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <h3>Persistent Memory</h3>
+                        <span style="background: #8b5cf6; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">NEW v4.4</span>
+                    </div>
+                    <p>Agents now remember patterns, conventions, and learnings across sessions. 3 levels: user (global), project, local. Memory auto-loads on agent spawn.</p>
+                    <div class="feature-tags">
+                        <span class="tag">14 Agents</span>
+                        <span class="tag">Auto-persist</span>
+                        <span class="tag">3 Levels</span>
+                    </div>
+                </div>
+                <div class="feature-card reveal" style="border: 2px solid rgba(34, 197, 94, 0.5); background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.05) 100%);">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v3"/>
+                            <path d="M18.5 13h-13"/>
+                            <path d="M12 21v-3"/>
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <h3>Granular Checkpointing</h3>
+                        <span style="background: #22c55e; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">NEW v4.5</span>
+                    </div>
+                    <p>Save/rollback at each step in pipelines. Resume interrupted work, rollback failed steps. Auto-suggest rollback on failure.</p>
+                    <div class="feature-tags">
+                        <span class="tag">/checkpoint</span>
+                        <span class="tag">Resume</span>
+                        <span class="tag">Rollback</span>
+                    </div>
+                </div>
+                <div class="feature-card reveal" style="border: 2px solid rgba(34, 197, 94, 0.5); background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <h3>Agent Teams</h3>
+                        <span style="background: #22c55e; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">v4.5</span>
+                    </div>
+                    <p>Parallel agent execution is now DEFAULT. Run multiple agents simultaneously for ~2x faster workflows. Supports /fix, /feat, /hotfix, /debug, /audit-feature, /explain, /api-contract-validator.</p>
+                    <div class="feature-tags">
+                        <span class="tag">--single</span>
+                        <span class="tag">~2x faster</span>
+                        <span class="tag">7 Skills</span>
+                    </div>
+                </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon orange">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1998,6 +2059,21 @@
                     <div class="feature-tags">
                         <span class="tag">--fast</span>
                         <span class="tag">--turbo</span>
+                    </div>
+                </div>
+                <div class="feature-card reveal" style="border: 2px solid rgba(168, 85, 247, 0.5); background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                        </svg>
+                    </div>
+                    <h3>Advanced Hooks System</h3>
+                    <p>12 hook events with auto-lint, failure recovery, permission auto-approve, and subagent logging. Full lifecycle control.</p>
+                    <div class="feature-tags">
+                        <span class="tag" style="background: rgba(168, 85, 247, 0.2); color: #a855f7;">12 Events</span>
+                        <span class="tag" style="background: rgba(34, 197, 94, 0.2); color: #22c55e;">Auto-approve</span>
+                        <span class="tag" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">Failure Recovery</span>
                     </div>
                 </div>
             </div>
@@ -2527,7 +2603,7 @@
                 <div class="footer-brand">
                     <div class="logo">
                         MegaTeam
-                        <span>v4.2</span>
+                        <span>v4.5</span>
                     </div>
                     <p>Multi-Agent DevOps Platform for Claude Code — optimize your end-to-end software development workflow.</p>
                     <div class="github-link">
@@ -2568,7 +2644,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>MegaTeam v4.2 — Multi-Agent DevOps Platform for Claude Code</p>
+                <p>MegaTeam v4.5 — Multi-Agent DevOps Platform for Claude Code</p>
             </div>
         </div>
     </footer>
